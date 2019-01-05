@@ -13,7 +13,7 @@ class Dfshow < Formula
     # Find our docbook catalog
     # ENV["XML_CATALOG_FILES"] = "#{etc}/xml/catalog"
 
-    config_path=etc
+    config_path=#{etc}
     data_path="#{prefix}/share"
 
     args = %W[
