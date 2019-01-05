@@ -22,6 +22,7 @@ class Dfshow < Formula
       --datadir=#{data_path}
     ]
 
+    system "./bootstrap"
     system "./configure", *args
     system "make"
 
