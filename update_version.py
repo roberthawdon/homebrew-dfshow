@@ -47,7 +47,7 @@ print('Commit SHA:', commit.sha)
 
 print('Editing file:', file)
 
-rx1 = re.compile(r"dfshow-[0-9]{8}")
+rx1 = re.compile(r"v(\d+\.)?(\d+\.)?(\*|\d+)-?(alpha|beta)?")
 rx2 = re.compile(r"[0-9a-f]{40}")
 
 with fileinput.FileInput(file, inplace=True) as file:
