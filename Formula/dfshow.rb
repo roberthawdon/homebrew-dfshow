@@ -1,7 +1,7 @@
 class Dfshow < Formula
   desc "An open source implementation of some of the applications from Larry Kroeker's DF-EDIT"
   homepage "https://dfshow.op-ezy.co.uk/"
-  url "https://github.com/roberthawdon/dfshow.git", :tag => "v0.6.1-alpha", :revision => "f2ab8f588e0402a3f3e38d48b235bafb9b864d87"
+  url "https://github.com/roberthawdon/dfshow.git", :tag => "v0.6.2-alpha", :revision => "902fa0467546f86ef694977d79b97d1157f68410"
   head "https://github.com/roberthawdon/dfshow.git", :branch => "master"
 
   depends_on "ncurses" => :build
