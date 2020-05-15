@@ -1,7 +1,7 @@
 class Dfshow < Formula
   desc "An open source implementation of some of the applications from Larry Kroeker's DF-EDIT"
   homepage "https://dfshow.op-ezy.co.uk/"
-  url "https://github.com/roberthawdon/dfshow.git", :tag => "v0.8.2-beta", :revision => "03049db3b446eddb289b4ebfbbbed0a88b5d96ec"
+  url "https://github.com/roberthawdon/dfshow.git", :tag => "v0.9.0-beta", :revision => "594344a314883871c53d622694823cddca49ae51"
   head "https://github.com/roberthawdon/dfshow.git", :branch => "master"
 
   depends_on "ncurses" => :build
@@ -27,6 +27,11 @@ class Dfshow < Formula
     system "make"
 
     system "make", "install"
+
+    bash_completion.install "misc/auto-completion/bash/show-completion.bash"
+    bash_completion.install "misc/auto-completion/bash/sf-completion.bash"
+    zsh_completion.install "misc/auto-completion/zsh/_show"
+    zsh_completion.install "misc/auto-completion/zsh/_sf"
   end
 
   test do
