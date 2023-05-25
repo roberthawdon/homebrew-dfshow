@@ -1,13 +1,14 @@
 class Dfshow < Formula
   desc "An open source implementation of some of the applications from Larry Kroeker's DF-EDIT"
-  homepage "https://dfshow.op-ezy.co.uk/"
-  url "https://github.com/roberthawdon/dfshow.git", :tag => "v0.9.7-beta", :revision => "e3ea42f3a65b32954d30c2fa0844051f15b5ba03"
+  homepage "https://dfshow.org/"
+  url "https://github.com/roberthawdon/dfshow.git", :tag => "v0.10.0-beta", :revision => "8f208cef56e8153d0f7f022b3f5f1efa82202812"
   head "https://github.com/roberthawdon/dfshow.git", :branch => "master"
 
   depends_on "ncurses" => :build
   depends_on "autoconf" => :build
   depends_on "libconfig" => :build
   depends_on "automake" => :build
+  depends_on "gettext" => :build
 
   def install
     # Find our docbook catalog
