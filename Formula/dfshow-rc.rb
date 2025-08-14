@@ -4,10 +4,9 @@ class DfshowRc < Formula
   url "https://github.com/roberthawdon/dfshow/releases/download/v1.0.0-rc2/dfshow-v1.0.0-rc2.tar.gz"
   version "1.0.0-rc2"
 
-  depends_on "ncurses" => :build
-  depends_on "libconfig" => :build
-  depends_on "libacl" => :build
-  depends_on "gettext" => :build
+  depends_on "libconfig"
+  depends_on "ncurses"
+  depends_on "gettext"
 
   conflicts_with "dfshow", :because => "both install the same binaries"
 
