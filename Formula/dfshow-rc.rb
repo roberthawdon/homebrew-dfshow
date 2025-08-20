@@ -1,9 +1,9 @@
 class DfshowRc < Formula
   desc "An open source implementation of some of the applications from Larry Kroeker's DF-EDIT (Release Candidate)"
   homepage "https://dfshow.org/"
-  url "https://github.com/roberthawdon/dfshow/releases/download/v1.0.0-rc3/dfshow-v1.0.0-rc3.tar.gz"
-  version "1.0.0-rc3"
-  sha256 "a3f3226e9af49fd70e441cf9cef22d7aa9a1b39cd07f8cc3feacdaea87159d71"
+  url "https://github.com/roberthawdon/dfshow/releases/download/v1.0.0-rc4/dfshow-v1.0.0-rc4.tar.gz"
+  version "1.0.0-rc4"
+  sha256 "9989d1828d56cc253d1e35ca178ac94cd9e26e413bd00eee44da226faeb50d22"
 
   depends_on "libconfig"
   depends_on "ncurses"
